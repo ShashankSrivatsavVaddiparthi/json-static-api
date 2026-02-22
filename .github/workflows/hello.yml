@@ -1,0 +1,16 @@
+name: My First Action
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 25ds1000067@ds.study.iitm.ac.in
+        run: echo "Hello from my custom action step!"
+
+      - name: List files
+        run: ls -la
